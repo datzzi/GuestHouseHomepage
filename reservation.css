@@ -1,0 +1,154 @@
+#reservation:after {
+    content: ""; display: block; clear: both;
+}
+#reservation {
+    width: 1200px;
+    max-width:1400px;
+    height: 700px;
+    max-height: 900px;
+/*    border: 1px dashed blue;*/
+    box-sizing: border-box;
+    margin: 0 auto;
+    position : relative;
+    
+    
+/*    transform: translate(50%,50%);*/
+}
+#reservation > h1 {
+   
+    margin: 0 auto;
+    text-align: right;
+    padding: 10px 0;
+}
+#reservation >h1 > span {
+    color: #747474;
+    font-size: 35px;
+    padding: 0px 20px;
+}
+#reservation > h1 >span:last-child{
+    border-left: 3px solid #666;
+}
+#outline {
+    width: 1100px;
+    max-width:1200px;
+    height: 500px;
+    max-height: 700px;
+/*    border: 1px dashed blue;*/
+/*    position: relative;*/
+    margin: 0 auto;
+    background-color: #FAECC5;
+    position : relative;
+/*    border : 1px dashed red;*/
+}
+.reservation {
+    font-size: 20px; 
+    position : absolute;
+    top : 80px;
+    left : 50px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    background: linear-gradient(125deg,#e3c759,#d759e3,#81ecec);
+    border-style: groove;
+    border: 6px solid #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #4C4C4C;
+}
+#outline .reservation li {
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px 20px;    
+    text-align: center;
+}
+#outline .reservation li>span {
+   padding-left: 20px;
+    vertical-align: top;
+    color: #fff;
+    cursor: pointer;
+   font-size: 20px; 
+    
+}
+#outline .reservation li> .option {
+    text-align: center;
+     
+}
+#outline .reservation li> input, select {
+    font-size: 20px;
+    
+    
+}
+#outline .reservation li:hover {
+    font-weight: 800;
+    
+}
+#outline .reservation li>input:hover {
+    font-weight: 800;
+     
+}  
+
+.total_area {
+/*    border: 2px groove #A6A6A6;*/
+    box-shadow: 0px 0px  3px #EAEAEA;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    top: 220px;
+    right: 480px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 10px;
+    
+   background: linear-gradient(125deg,#A6A6A6,#FFD9EC,#EAEAEA);
+}
+
+
+
+
+
+
+
+
+.btnwrapper {
+/*    border: 1px dashed red;*/
+    position : relative;
+    top : 300px;
+    text-align : center;
+}
+.btn_book {
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    background: linear-gradient(125deg,#D6C7ED,#FF97DC,#D6C7ED);
+    border-style: groove;
+    border: 6px solid #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #4C4C4C;
+    color: #F6F6F6;
+    font-weight: 500;
+}
+.btn_book:hover {
+    font-weight:900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

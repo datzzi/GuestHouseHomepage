@@ -1,0 +1,218 @@
+/*로그인*/
+body {
+  background-image: #34495e;
+}
+#wrap {
+    position: relative;
+    
+}
+
+#myPage{
+    width: 500px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 110px 0;
+   
+}
+.loginForm {
+  position:absolute;
+  width:500px;
+  height:800px;
+  padding: 30px, 20px;
+  background-color:#FFFFFF;
+  text-align:center;
+  top:810px;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 15px;
+  background-color: #fae1d7;
+/*    width:100%;*/
+	
+	
+	align-items:center;
+	margin-top: 21px;
+}
+
+.loginForm h2{
+  text-align: center;
+  margin: 30px;
+}
+
+.idForm{
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+
+.passForm{
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;
+}
+
+.nameForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px;  
+}
+
+.birthForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px; 
+}
+.genderForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px; 
+}
+.emailForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px; 
+}
+.phoneForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px; 
+}
+.zipcodeForm {
+  border-bottom: 2px solid #adadad;
+  margin: 30px;
+  padding: 10px 10px; 
+}
+.id {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%; 
+}
+
+.pw {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;
+}
+
+.name {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;
+}
+.birth {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;
+}
+.gender {
+     width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;
+}
+.email {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;  
+}
+.phone {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;
+}
+.zipcode {
+  width: 70%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;  
+}
+.address {
+  width: 100%;
+  border:none;
+  outline:none;
+  color: #636e72;
+  font-size:16px;
+  height:25px;
+  background: none;
+  border:1px solid red;
+  margin-left: 5%;    
+}
+.text {
+    width:30%;
+    border: 1px solid red;
+}
+
+
+.repw {
+  position:relative;
+  left:40%;
+  transform: translateX(-49%);
+  margin: 10px 0;
+  width:25%;
+  height:30px;
+  background: linear-gradient(125deg,#e3c759,#d759e3,#81ecec);
+  background-position: left;
+  background-size: 200%;
+  color:white;
+  font-weight: bold;
+  border:none;
+  cursor:pointer;
+  transition: 0.4s;
+  display:inline;
+  border-radius: 10px;  
+    
+/*    border: 1px dashed red;*/
+}
+
+.btn:hover {
+  background-position: right;
+}
+
+.bottomText {
+  text-align: center;
+}

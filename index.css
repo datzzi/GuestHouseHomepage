@@ -1,0 +1,32 @@
+#paragraph {
+    width: 800px;
+    height: 700px;
+    margin: 0 auto;
+    
+    padding: 10px 30px;
+}
+#p_outline {
+    width: 750px;
+    height: 600px;
+    background-color: #FAECC5;
+    
+    padding: 10px 30px;
+    
+}
+.p:first-child {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 70px 0;
+}
+.p {
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+.representative {
+    width: 150px;
+    padding: 20px 0;
+    font-size: 20px;
+    float: right;
+    
+}

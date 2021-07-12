@@ -1,0 +1,227 @@
+#reservation:after {
+    content: ""; display: block; clear: both;
+}
+#reservation {
+    width: 1200px;
+    max-width: 1400px;
+    height: 750px;
+    max-height: 1200px;
+/*    border: 1px dashed red;*/
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #FAECC5;
+}
+
+#room_name {
+   font-size: 20px;
+   margin: 10px 0;
+    font-weight: 900;
+}
+#room_display {
+/*    border: 1px solid #666;*/
+    width: 250px;
+    height: 10%px;
+    padding: 5px 10px;
+    float: left;
+    font-size: 20px;
+    line-height: 35px;
+    background-color: #FFD8D8;
+}
+#room_display >ul >li> .more {
+/*    border: 1px dashed red;*/
+   display: inline-block;
+   
+}
+
+#room_display >ul >li> .more >img{
+/*    border: 1px dashed blue;*/
+   transform: translate(280%, -1100%)
+    
+}
+#reservation  h1 {
+   
+    margin: 0 auto;
+    text-align: right;
+    padding: 10px 0;
+   
+}
+#reservation h1 > span {
+    color: #747474;
+    font-size: 35px;
+    padding: 0px 20px;
+}
+#reservation  h1 >span:last-child{
+    border-left: 3px solid #666;
+}
+
+/*오른쪽 위 객실 가격있는 표*/
+#room_information_wrapper {
+    width: 900px;
+    height: 600px;
+    float: left;
+/*    border: 1px dashed blue;*/
+    margin: 0 10px;
+}
+#room_display ul {
+  
+    margin: 10px 0;
+}
+
+/*
+#room_display img {
+    vertical-align:sub;
+}
+#room_display  img:first-child {
+    vertical-align: none;
+}
+#room_display img:nth-child(2) {
+     vertical-align: none;
+}
+*/
+
+#room_information {
+    border: 1px solid #666;
+    width: 900px;
+    background-color: #FFD8D8;
+    text-align: center;
+    font-size: 23px;
+    
+    box-sizing: border-box;
+}
+
+.room_info {
+    display: inline-block;
+/*    border: 1px dashed green;*/
+    padding: 10px 30px;
+    margin: 0 50px;
+}
+.room_info p {
+    font-weight: 900;
+}
+.room_info select{
+    font-size: 20px;
+    
+}
+.room_info li {
+    margin-top: 10px;
+}
+
+
+
+/*오른쪽 아래 유료 부가서비스*/
+#service_outline {
+    
+  
+    width: 900px;
+}
+#service_outline h2 {
+/*    border: 1px dashed brown;*/
+    margin: 10px 0;
+}
+
+
+#nonfree_option_service {
+    border: 1px solid #666;
+    width: 900px;
+    height: 150px;
+    background-color: #FFD8D8;
+    font-size: 25px;
+    
+}
+#nonfree1 {
+    text-align: left;
+    
+}
+#nonfree1 .nonfree_list1 {
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 80px;
+   
+} 
+#nonfree1 .nonfree_list1:last-child {
+    margin-left: 95px;
+    
+}
+#nonfree_option_service p {
+    
+    margin: 0 40px;
+    font-size: 20px;
+    font-weight: 900;
+}  
+#nonfree2 {
+    float: left;
+    text-align: left;
+    margin: 10px 150px;
+    width: 150px;
+}
+.nonfree2>li {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+}    
+#nonfree3 {
+    float: left;
+    text-align: left;
+    margin: 10px 150px;
+    width: 150px;
+}
+.nonfree3>li {
+    display: block;
+    font-size: 19px;
+    margin-bottom: 20px;
+}    
+#nonfree2 img {
+    
+    vertical-align: bottom;
+}    
+
+
+/*  총 요금   */
+#total_fare:after {
+    clear: both;
+    display: block;
+    content: "";
+}
+#total_fare {
+  
+    width: 200px;
+    height: 100px;
+    float: right;
+    
+}
+#total_fare p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 0 10px;
+}   
+#total_fare p:first-child {
+    border-bottom: 2px solid #666;
+    padding-bottom: 5px;
+}  
+
+/*예약하기 버튼*/
+.btnwrapper {
+/*    border: 1px dashed red;*/
+    position : relative;
+    top : 180px;
+    text-align : center;
+}
+.btn_book {
+    width: 150px;
+    height: 100px;
+    font-size: 25px;
+    background: linear-gradient(125deg,#D6C7ED,#FF97DC,#D6C7ED);
+    border-style: groove;
+    border: 6px solid #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #4C4C4C;
+    color: #F6F6F6;
+    font-weight: 500;
+}
+.btn_book:hover {
+    font-weight:900;
+}
+
+    

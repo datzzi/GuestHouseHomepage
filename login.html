@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini's Guest House</title>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" href="login.css">
+        <script src="js/jquery-1.12.3.js" type="text/javascript"></script>
+        
+        
+        
+<!--   메뉴 슬라이드 토글     -->
+        <script>
+		$(document).ready(function(){
+			$('.subm').hide();
+			
+			$('.myMenu_s').hover(function(){
+				$('.subm',this).stop().slideToggle('slow');
+			});
+		});
+	</script>
+
+</head>
+<body>
+    <header>
+       <nav class="nav">
+				<ul>
+					<li class="action"><a href="join.html">회원가입</a></li>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="#">My계정</a></li>
+					<li><a href="#">문의사항</a></li>
+					<li><a href="#">로그아웃</a></li>
+				</ul>
+			</nav>
+       
+<!--
+       <nav class="FAQ">
+          <img src="image/qa.png" alt="문의사항" width="40" height="40">
+          <p><a href="#">FAQ</a></p> 
+       </nav> 
+-->
+<!--   Mini's GuestHouse 로고 넣기      -->
+    
+        <h1>
+        <a href="index.html"><img src="image/butflower.jpg" alt="" width="100" height="70">
+        <span>Mini's Guest House</span>
+        <img src="image/butflower.jpg" alt="" width="100" height="70"></a>
+        </h1>
+    </header>
+<!--메뉴시작-->
+       <nav class="menu">
+           
+              <ul class="myMenu">
+                   <li class="myMenu_s">
+               <a href="#">게스트 하우스 소개</a>
+                       <ul class="subm">
+                           <li>
+                           <a href="#">공지사항</a>
+                           </li>
+                           <li><a href="index.html">소개</a></li>
+                       </ul>
+                   </li>
+                   <li class="myMenu_s">
+                            <a href="#">시설 안내</a>
+                        <ul class="subm">
+                            <li><a href="rooms.html">객실</a></li>
+                            <li><a href="#">부대시설</a></li>
+                        </ul>
+                   </li>
+                   <li class="myMenu_s">
+                            <a href="#">예약</a>
+                        <ul class="subm">
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="reservation.html">객실예약</a></li>
+                            <li><a href="login.html">예약확인</a></li>
+                        </ul>
+                   </li>
+                   <li class="myMenu_s">
+                           <a href="#">주변 관광지</a>
+                        <ul class="subm">
+                            <li><a href="#">관광지 소개</a></li>
+                            <li><a href="#">관광지 예약</a></li>
+                        </ul>
+                   </li>
+           </ul>
+       </nav>
+<!--   퀵메뉴     -->
+<!--
+       <nav class="quickmenu">
+           <ul>
+               <li>
+               <img src="image/Cs1.png" alt="전화상담" width="30">
+               <a href="#">전화상담</a>
+               </li>
+               <li>
+               <img src="image/chat.png" alt="채팅상담" width="30">
+               <a href="#">채팅상담</a>
+               </li>
+               <li>
+               <img src="image/booking.png" alt="예약" width="30">
+               <a href="#">예약바로가기</a>
+               </li>
+           </ul>
+       </nav>   
+-->
+    
+    
+<!--  슬라이드 시작  -->
+<!--
+    <section id="wrap">
+      <h2 class="hidden">메인 슬라이드</h2>
+          <div id="train">
+              <div class="trainInner">
+                 
+                    <ul class="bg">
+                      <li>
+                        <img src="image/bowwow1.jpg" alt="전경1"  >
+                      </li>
+                    </ul>
+                    <ul class="bg">
+                      <li>
+                        <img src="image/bowwow2.jpg" alt="전경2"  >
+                      </li>
+                    </ul>
+                    <ul class="bg">
+                      <li>
+                        <img src="image/bowwow3.jpg" alt="전경3"  >
+                      </li>
+                    </ul>
+               
+              </div>
+          </div> 
+       <p class="lbutton"><img src="image/left_button.png" alt="왼쪽버튼" title="배너 좌측이동"></p>
+       <p class="rbutton"><img src="image/right_button.png" alt="오른쪽버튼" title="배너 우측이동"></p>   
+    </section>
+-->
+   
+<!--  로그인   -->
+    <div id="login">
+     <form action="index.html" method="post" class="loginForm">
+      <h2>Login</h2>
+      <div class="idForm">
+        <input type="text" class="id" placeholder="ID">
+      </div>
+      <div class="passForm">
+        <input type="password" class="pw" placeholder="PW">
+      </div>
+      <button type="button" class="btn" onclick="button()">
+        LOG IN
+      </button>
+      <script>
+      	let button = () => {
+        	alert('login Button !')
+        }
+      </script>
+      <div class="bottomText">
+        Don't you have ID? <a href="#">sign up</a>
+      </div>
+    </form>
+  </div>   
+     
+     
+     
+     
+     
+     
+     
+     
+   <!--  푸터 시작   -->
+    <footer>
+        <div class="footer">
+            <ul id="f_li">
+                <li><a href="#">사업장소개</a></li>
+                <li><a href="#"></a>이용약관</li>
+                <li><a href="#"></a>개인정보취급방침</li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul class="f_right">
+                <li><a href="#"><img src="image/twitter.png" alt="트위터" title="twitter" width="30"></a></li>
+                <li><a href="#"><img src="image/facebook.png" alt="페이스북" title="facebook" width="30"></a></li>
+                <li><a href="#"><img src="image/instagram.png" alt="인스타그램" title="instargram" width="30"></a></li>
+            </ul>
+        </div>
+        <nav id="f_b">
+         <ul>
+          <li>
+           <p>
+            상호 : Mini's Guest House <br>
+            대표 : 신혜민<br>
+            주소 : 제주, 서해안로 620-1<br>
+            대표전화 : 033-563-5506<br>
+        </p> 
+        </li>
+        <li>  
+        <p>
+            이메일 : sylviashin93@naver.com<br>
+            사업자등록번호 : 545-05-00152 &nbsp; 사업자정보 확인<br>
+            <strong>Copyright(c) Mini's Guest House. All Rights Reserved.</strong>
+
+        </p>
+        </li>
+        </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

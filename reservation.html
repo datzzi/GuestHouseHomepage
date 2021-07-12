@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini's Guest House</title>
+    <link rel="stylesheet" type="text/css" href="common.css">
+    <link rel="stylesheet" type="text/css" href="reservation.css">
+    
+    <script src="js/jquery-1.12.3.js" type="text/javascript"></script>
+<!--  메뉴   -->
+  <script>
+		$(document).ready(function(){
+			$('.subm').hide();
+			
+			$('.myMenu_s').hover(function(){
+				$('.subm',this).stop().slideToggle('slow');
+			});
+		});
+	</script>
+	
+
+	
+<!--  슬라이드	-->
+	<script>
+		$(function(){
+			$("#trainInner").css("width",1200*$("#trainInner  ul.room").size()+"px"); //size 갯수는 5개! .room이 5개!
+		$(".room:last").prependTo("#trainInner");// 맨 마지막 .room을 맨 앞으로 붙여라.	
+		$("#trainInner").css("margin-left","-1200px"); //2번이 보여라.
+		
+		$("#pre").click(function(){ //이전버튼을 누르면  
+				  $("#pre , #next").hide(); //일단 숨기고
+				  $("#trainInner").animate({ //trainInner를 애니메이트 시켜라
+						marginLeft:parseInt($("#trainInner").css("margin-left"))+1200+"px"},"slow","swing",function(){
+                      
+						 $("#trainInner").css("margin-left","-1200px");
+						 $(".room:last").prependTo("#trainInner");
+						 $("#pre , #next").show();
+				  });	
+			});
+		
+		$("#next").click(function(){
+			$("#pre, #next").hide();
+			$("#trainInner").animate({
+			marginLeft:parseInt($("#trainInner").css("margin-left"))-1200+"px" },"slow","swing", function(){ $("#trainInner").css("margin-left","-1200px"); $(".room:first").appendTo("#trainInner");
+			$("#pre, #next").show();
+					});
+				});
+				
+		var  timerId  = setInterval(function(){$("#next").click();   },3000);
+
+		$("#pre img, #next img"). click(function(){
+		 clearInterval(timerId) //setInterval을 해제하는 명령.
+		});
+		});	
+				
+		
+	</script>
+	
+	
+	
+	
+</head>
+<body>
+    <header>
+       <nav class="nav">
+				<ul>
+					<li class="action"><a href="join.html">회원가입</a></li>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="#">My계정</a></li>
+					<li><a href="#">문의사항</a></li>
+					<li><a href="#">로그아웃</a></li>
+				</ul>
+			</nav>
+       
+<!--
+       <nav class="FAQ">
+          <img src="image/qa.png" alt="문의사항" width="40" height="40">
+          <p><a href="#">FAQ</a></p> 
+       </nav> 
+-->
+<!--   Mini's GuestHouse 로고 넣기      -->
+    
+        <h1>
+        <a href="index.html"><img src="image/butflower.jpg" alt="" width="100" height="70">
+        <span>Mini's Guest House</span>
+        <img src="image/butflower.jpg" alt="" width="100" height="70"></a>
+        </h1>
+    </header>
+<!--메뉴시작-->
+       <nav class="menu">
+           
+              <ul class="myMenu">
+                   <li class="myMenu_s">
+               <a href="#">게스트 하우스 소개</a>
+                       <ul class="subm">
+                           <li>
+                           <a href="#">공지사항</a>
+                           </li>
+                           <li><a href="main.html">소개</a></li>
+                       </ul>
+                   </li>
+                   <li class="myMenu_s">
+                            <a href="#">시설 안내</a>
+                        <ul class="subm">
+                            <li><a href="#">객실</a></li>
+                            <li><a href="#">부대시설</a></li>
+                        </ul>
+                   </li>
+                   <li class="myMenu_s">
+                            <a href="#">예약</a>
+                        <ul class="subm">
+                            <li><a href="#">예약안내</a></li>
+                            <li><a href="#">예약하기</a></li>
+                            <li><a href="#">예약조회</a></li>
+                        </ul>
+                   </li>
+                   <li class="myMenu_s">
+                           <a href="#">주변 관광지</a>
+                        <ul class="subm">
+                            <li><a href="#">관광지 소개</a></li>
+                            <li><a href="#">관광지 예약</a></li>
+                        </ul>
+                   </li>
+           </ul>
+       </nav>
+<!--   퀵메뉴     -->
+<!--
+       <nav class="quickmenu">
+           <ul>
+               <li>
+               <img src="image/Cs1.png" alt="전화상담" width="30">
+               <a href="#">전화상담</a>
+               </li>
+               <li>
+               <img src="image/chat.png" alt="채팅상담" width="30">
+               <a href="#">채팅상담</a>
+               </li>
+               <li>
+               <img src="image/booking.png" alt="예약" width="30">
+               <a href="#">예약바로가기</a>
+               </li>
+           </ul>
+       </nav>   
+-->
+    
+    
+<!--  슬라이드 시작  -->
+    <section id="wrap">
+      <h2 class="hidden">메인 슬라이드</h2>
+          <div id="train">
+        <p id="pre"><img src="image/left_button.png" alt="왼쪽버튼" title="배너 좌측이동"></p>
+        <p id="next"><img src="image/right_button.png" alt="오른쪽버튼" title="배너 우측이동"></p>  
+            <div id="trainInner">
+                 
+                    <ul class="room">
+                      <li>
+                        <img src="image/ground/bgd1.png" alt="전경1"  >
+                      </li>
+                    </ul>
+                    <ul class="room">
+                      <li>
+                        <img src="image/ground/baghdad7.png" alt="전경2"  >
+                      </li>
+                    </ul>
+                    <ul class="room">
+                      <li>
+                        <img src="image/ground/baghdad11.png" alt="전경3"  >
+                      </li>
+                    </ul>
+                    <ul class="room">
+                      <li>
+                        <img src="image/ground/awol1.png" alt="전경3"  >
+                      </li>
+                    </ul>
+                    <ul class="room">
+                      <li>
+                        <img src="image/ground/flower3.png" alt="전경3"  >
+                      </li>
+                    </ul>
+                    <ul class="room">
+                      <li>
+                        <img src="image/ground/sea3.png" alt="전경3"  >
+                      </li>
+                    </ul>
+               
+              </div>
+          </div> 
+        
+    </section>
+    
+<!-- 예약  -->
+    <div id="reservation">
+        <h1><span>예약하기</span><span>Reservation</span></h1>
+<!-- 예약 폼 시작  -->
+        <form action="" name="how_many">
+           <div id="outline">
+            <ul class="reservation">
+                <li class="reserv_sub">
+                    <img src="image/nookiin.png" alt="checkin" width="30"><span>체크인</span>
+                    <ul>
+                        <li class="calendar">
+                            <input type="date" name="calendar_in" required>
+                        </li>
+                    </ul>
+                </li>
+                <li class="reserv_sub">
+                    <img src="image/nooki2.png" alt="checkout" width="30"><span>체크아웃</span>
+                    <ul>
+                        <li class="option">
+                            <input type="date" name="caldendar_out" required>
+                        </li>
+                    </ul>
+                </li>
+                <li class="reserv_sub">
+                    <img src="image/group.png" alt="people" width="30"><span>인원</span>
+                    <ul>
+                        <li class="option">
+                            <span id="total_people" onclick="sum();" name="total_people">0</span><span>명</span>
+<!--
+                            <select name="people" id="people">
+                                <option value="1">
+                                    1
+                                </option>
+                                <option value="2">
+                                    2
+                                </option>
+                                <option value="3">
+                                    3
+                                </option>
+                                <option value="4">
+                                    4
+                                </option>
+                            </select>
+-->
+                        </li>
+                    </ul>
+                </li>
+               
+                <li>
+                   <img src="image/adult.png" alt="adult" width="30"><span>성인<br></span>
+                    <ul>
+                        <li class="option">
+                            <select name="num1" id="adult">
+                                <option value="0">
+                                    0
+                                </option>
+                                <option value="1">
+                                    1
+                                </option>
+                                <option value="2">
+                                    2
+                                </option>
+                                <option value="3">
+                                    3
+                                </option>
+                                <option value="4">
+                                    4
+                                </option>
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <img src="image/baby.png" alt="baby" width="30"><span>영유아<br></span>
+                    <ul>
+                        <li class="option">
+                            <select name="num2" id="children">
+                              <option value="0">
+                                    0
+                                </option>
+                                <option value="1">
+                                    1
+                                </option>
+                                <option value="2">
+                                    2
+                                </option>
+                                <option value="3">
+                                    3
+                                </option>
+                                <option value="4">
+                                    4
+                                </option>  
+                            </select>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+<!--
+    <div class="total_area">
+        <span>Total =</span>
+        <strong class="count_total">0</strong>&nbsp;명
+    </div>
+-->
+
+          <script>
+               
+        function sum(){
+            var num1=document.getElementById("adult").value;
+            var num2=document.getElementById("children").value;
+            document.getElementById("total_people").innerHTML=eval(num1+num2);
+            }
+        }       
+               
+               
+        </script>
+           
+       
+           
+           
+           
+            
+            <div class="btnwrapper">
+            
+            <a href="reservation1.html"><button type="button" class="btn_book" onclick="button()" value="book" name="book">
+        예약하기
+      </button></a>
+      <script>
+      	let button = () => {
+        	alert('객실 예약 페이지로 넘어갑니다.')
+        }
+      </script>
+      </div>
+    
+    </div>
+        
+   </form>     
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
+<!--  푸터 시작   -->
+    <footer>
+        <div class="footer">
+            <ul id="f_li">
+                <li><a href="#">사업장소개</a></li>
+                <li><a href="#"></a>이용약관</li>
+                <li><a href="#"></a>개인정보취급방침</li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul class="f_right">
+                <li><a href="#"><img src="image/twitter.png" alt="트위터" title="twitter" width="30"></a></li>
+                <li><a href="#"><img src="image/facebook.png" alt="페이스북" title="facebook" width="30"></a></li>
+                <li><a href="#"><img src="image/instagram.png" alt="인스타그램" title="instargram" width="30"></a></li>
+            </ul>
+        </div>
+        <div id="f_b">
+         <ul>
+          <li class="f_detail">
+           <p>
+            상호 : Mini's Guest House <br>
+            대표 : 신혜민<br>
+            주소 : 제주, 서해안로 620-1<br>
+            대표전화 : 033-563-5506<br>
+        </p> 
+        </li>
+        <li class="f_detail">  
+        <p>
+            이메일 : sylviashin93@naver.com<br>
+            사업자등록번호 : 545-05-00152 &nbsp; 사업자정보 확인<br>
+            <strong>Copyright(c) Mini's Guest House. All Rights Reserved.</strong>
+
+        </p>
+        </li>
+        </ul>
+        </div>
+    
+</footer>   
+    
+    
+</body>
+</html>
